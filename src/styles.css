@@ -1,0 +1,26 @@
+/* Define color variables for light and dark mode */
+:root {
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --bg-color-dark: #121212;
+    --text-color-darsk: #e0e0e0;
+  }
+  
+  /* body {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+  }
+   */
+  /* body.dark-mode {
+    background-color: var(--bg-color-dark) !important;
+    color: var(--text-color-dark) !important;
+  } */
+
+  
+  /* Automatically detect user preference */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--bg-color-dark);
+      color: var(--text-color-darsk) !important;
+    }
+  }
